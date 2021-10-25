@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Signup">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="45dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MyHotel"
+                android:textColor="@android:color/black"
+                android:textSize="32dp"
+                android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/x"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutAccount"
+        android:layout_below="@+id/topBar"
+        android:background="@drawable/elips_sidebar"
+        android:layout_width="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/user"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/myAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:text="My Account"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user"
+            android:layout_below="@id/myAccount"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:text="Edit your details, account settings"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBooking"
+        android:layout_below="@+id/layoutAccount"
+        android:background="@drawable/elips_sidebar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/booking"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/booking"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/myBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/booking"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:text="My Booking"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/booking"
+            android:layout_below="@id/myBooking"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:text="View all your orders"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/wave"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp">
+
+        <Button
+            android:id="@+id/buttonFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/elips_button"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="Feedback"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/buttonSignout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/elips_button_black"
+            android:drawablePadding="10dp"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:text="Sign out"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wave" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Signup">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:id="@+id/imageAkun"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/circle"/>
+
+        <LinearLayout
+            android:id="@+id/layoutInfo"
+            android:layout_toRightOf="@id/imageAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/homename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hey User"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Welcome back!"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hamburger"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hamburger"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/topBar"
+        android:background="@drawable/elips_edittext"/>
+
+    <TextView
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:layout_marginTop="32dp"
+        android:text="Recent"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/viewmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:text="view more"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:scrollbars="horizontal"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/recent" />
+
+</RelativeLayout>

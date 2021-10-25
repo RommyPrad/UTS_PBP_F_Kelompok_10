@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Signup">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="45dp">
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/elips_button"
+            android:text="&lt; "
+            android:textSize="24sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/buttonBack"
+                android:text="Room Detail"
+                android:textColor="@android:color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hotelname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Hotel Name"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hotelprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/hotelname"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:text="Rp."/>
+
+    <ImageView
+        android:id="@+id/bookThis"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageHotel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/topBar"
+        android:src="@drawable/hotel"/>
+
+</RelativeLayout>
